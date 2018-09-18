@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/cook-food-kitchen-eat-54455.jpeg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Header & Search bar */
+
+.form-search {
+    background: #FFEBA4;
+    padding: 50px;
+    align-items: center;
+}
+
+.form-search h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-search h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#search-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+input {
+    padding: 20px 40px 20px 40px;
+}
+
+button {
+    padding: 20px 40px 20px 40px;
+}
+
+
+
+/* Results */
+
+#results {
+    display: flex;
+    flex-flow: row wrap;
+    background: black;
+}
+
+#results div {
+    color: white;
+    margin: 25px;
+}
+
+#results div h2 {
+    text-align: center;
+    padding-bottom: 20px
+}
+
+#results div a {
+    text-align: center;
+    color: #ffeba4;
+}
