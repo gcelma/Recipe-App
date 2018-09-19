@@ -32,18 +32,29 @@ body {
     padding-bottom: 30px;
 }
 
-#search-bar {
+#search_bar {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
 input {
     padding: 20px 40px 20px 40px;
+    width: 300px;
+    margin-right: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
 }
 
 button {
     padding: 20px 40px 20px 40px;
+    margin-left: 5px;
+    background: #72A308;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
 }
 
 
@@ -54,6 +65,7 @@ button {
     display: flex;
     flex-flow: row wrap;
     background: black;
+    justify-content: space-evenly;
 }
 
 #results div {
@@ -63,10 +75,10 @@ button {
 
 #results div h2 {
     text-align: center;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 #results div a {
-    text-align: center;
     color: #ffeba4;
 }

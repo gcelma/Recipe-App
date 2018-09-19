@@ -1,8 +1,6 @@
 $('form').submit(function(e) {
     e.preventDefault();
-    $('.shown_title').remove();
-    $('.shown_image').remove();
-    $('.shown_recipe').remove();
+    $('.load_results').remove();
     var query = $('input').val();
     $('form').trigger('reset');
 
@@ -20,7 +18,7 @@ $('form').submit(function(e) {
     function successFn(result) {
         var recipes = result.hits;
         for(var i=0; i<recipes.length; i++){
-        $("#results").append("<div><h2 class='shown_title'>"+recipes[i].recipe.label+"</h2><p class='shown_image'><img src="+recipes[i].recipe.image+"></p><p class='shown_recipe'><a href="+recipes[i].recipe.url+" target='_blank'>Show me the recipe!</a></p></div>");       
+        $("#results").append("<div class='load_results'><h2>"+recipes[i].recipe.label+"</h2><p><img src="+recipes[i].recipe.image+"></p><p id='img-link'><a href="+recipes[i].recipe.url+" target='_blank'>Show me the recipe!</a></p></div>");       
         }
     }
 
